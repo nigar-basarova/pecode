@@ -4,7 +4,8 @@ import './App.css'
 
 
 //* komponentler gelecek
-import Navbar from './components/navbar'
+import Navbar from './components/Navbar'
+import Introduction from './components/Introduction'
 
 
 
@@ -13,8 +14,12 @@ function App() {
   
 
   return (
-   <Navbar/>
+    <>
+    <Navbar/>
+    <Introduction/>
+    </>
   )
 }
 
 export default App
+ 

@@ -1,5 +1,5 @@
 .mobile-menu{
-    background-color: #222;
+    background-color: #111;
     opacity: .7;
     width: 0;
     height: 100vh;
@@ -8,6 +8,7 @@
     left: 0;
     overflow-x: hidden;
     transition: width .5s linear;
+    
 }
 
 .aktiv{
@@ -23,7 +24,7 @@ justify-content: center;
 height: 100vh;
 }
 .mobile-menu .mobile-links a{
-    color: #aaa;
+    color: #fff;
     font-size: 33px;
     text-decoration: none;
 }

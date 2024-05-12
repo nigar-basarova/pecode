@@ -1,0 +1,7 @@
+.blog-img{
+    height: 280px;
+object-fit: cover;
+}
+.card-title{
+    font-size: 1.5rem;
+}

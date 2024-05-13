@@ -1,10 +1,10 @@
-import React, { useRef } from "react";
+// import React, { useRef } from "react";
 import App from "./App";
-import { Link } from "react-router-dom";
-import { IoClose } from "react-icons/io5";
 
+import { IoClose } from "react-icons/io5";
+import {Link} from "react-router-dom";
 import "./Navbar.css";
-// import {useRef} from 'react';
+import {useRef} from 'react';
 
 const Navbar = () => {
   //useRef hookdur
@@ -32,9 +32,9 @@ const Navbar = () => {
 
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <a className="navbar-brand" to="#">
+          <link className="navbar-brand" to="/">
             <img src="public/assets/images/logo.svg" alt="" />
-          </a>
+          </link>
           <button
             onClick={menyunuAc}
             className="navbar-toggler"
@@ -50,9 +50,9 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  What we do
-                </a>
+                <link
+                className="nav-link" to="/what-we-do"> What we do
+                </link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/#">

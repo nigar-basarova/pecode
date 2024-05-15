@@ -1,8 +1,11 @@
 import React from 'react'
+import ArticlesSection from '../components/ArticlesSection'
 
 const Home = () => {
   return (
-    <div>Home page</div>
+    <div className='container'>
+        <ArticlesSection/>
+    </div>
   )
 }
 

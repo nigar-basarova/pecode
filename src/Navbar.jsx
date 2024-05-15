@@ -1,14 +1,14 @@
-// import React, { useRef } from "react";
-import App from "./App";
 
+import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
-import {Link} from "react-router-dom";
 import "./Navbar.css";
-import {useRef} from 'react';
+
+
 
 const Navbar = () => {
-  //useRef hookdur
   const qaraGundeOlanMenyu = useRef();
+
   const menyunuAc = () => {
     qaraGundeOlanMenyu.current.classList.add("aktiv");
   };
@@ -20,21 +20,20 @@ const Navbar = () => {
   return (
     <>
       <div className="mobile-menu position-fixed" ref={qaraGundeOlanMenyu}>
-        <div />
         <IoClose className="text-white baglama-iconu" onClick={menyunuBagla} />
         <nav className="mobile-links">
-          <a href="">What we do</a>
-          <a href="">Career</a>
-          <a href="">Contact</a>
-          <a href="">Blog</a>
+          <Link to="/what-we-do">What we do</Link>
+          <Link to="/career">Career</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/blog">Blog</Link>
         </nav>
       </div>
 
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <link className="navbar-brand" to="/">
-            <img src="public/assets/images/logo.svg" alt="" />
-          </link>
+          <Link className="navbar-brand" to="/">
+            <img src="/assets/images/logo.svg" alt="Company Logo" />
+          </Link>
           <button
             onClick={menyunuAc}
             className="navbar-toggler"
@@ -50,24 +49,16 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <link
-                className="nav-link" to="/what-we-do"> What we do
-                </link>
+                <Link className="nav-link" to="/what-we-do">What we do</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#">
-                  Career
-                </a>
+                <Link className="nav-link" to="/career">Career</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#">
-                  Contact
-                </a>
+                <Link className="nav-link" to="/contact">Contact</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#">
-                  Blog
-                </a>
+                <Link className="nav-link" to="/blog">Blog</Link>
               </li>
             </ul>
           </div>

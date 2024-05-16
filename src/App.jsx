@@ -39,7 +39,7 @@ return (
   <Route path='/what-we-do' element={<WhatWeDo/>}/>
   <Route path='/kariyera' element={<Career/>}/>
   <Route path='/blog' element={<Blog/>}/>
-  <Route path='/bizimle elaqe' element={<Contact/>}/>
+  <Route path='/bizimle-elaqe' element={<Contact/>}/>
  
 <Route path='*' element={<NotFound/>}/>
 x

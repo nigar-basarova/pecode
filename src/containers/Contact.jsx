@@ -53,8 +53,10 @@ NigarinYaratdigiForm.current.reset()
 
         
 
-        <div className='contacts-container my-5'>
-          <img src="/assets/icon/bezek.svg" alt="" />
+        <div className='contacts-container my-5 position-relative'>
+          <img src="/assets/icon/bezek.svg" alt="" className='footer-left' />
+          <img src="/assets/icon/bezek2.svg" alt="" className='footer-right' />
+
             <div className="container d-flex justify-content-center ">
                 <form onSubmit={mesajiGonder} className='bg-dark form p-5' ref={NigarinYaratdigiForm}>
                 <h4 className='text-white'> Get in touch</h4>

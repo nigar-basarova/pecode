@@ -30,3 +30,32 @@ border: none;
     height: 56px;
     
  }
+
+ .footer-left{
+    position: absolute;
+    top: 40px;
+    left: 10%;
+    transform: rotate(90deg);
+    animation: oxuFirlat 2s linear infinite;
+ }
+ .footer-right{
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+ }
+
+ @keyframes oxuFirlat {
+    from{
+        transform: rotate(0);
+    }
+    to {
+     transform: rotate(360deg);   
+    }
+ }
+
+
+
+ /* mobile */
+
+
+ 

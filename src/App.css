@@ -3,14 +3,14 @@ textarea{
 }
 .form  {
     width: 503px;
-    height: 553px;
+    height: 503px;
 }
-.form input form textarea{
+.form input, .form textarea {
     background-color: transparent;
     border: 0;
     border-bottom: 1px solid #fdfdfd;
 }
-.form input:focus, form textarea:focus{
+.form input:focus, .form textarea:focus{
 background-color: transparent;
 border: none;
 }
